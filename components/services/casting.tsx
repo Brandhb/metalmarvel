@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { Card } from "@/components/ui/card"
 import { Cast, CheckCircle2 } from "lucide-react"
+import Image from "next/image"
 
 const castingFeatures = [
   "Investment casting for complex geometries",
@@ -48,18 +49,20 @@ export function CastingService() {
             transition={{ duration: 0.6 }}
             className="grid grid-cols-2 gap-4"
           >
-            <Card className="p-4 aspect-square">
-              <img
-                src="https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?auto=format&fit=crop&q=80"
+            <Card className="p-4 relative aspect-square">
+              <Image
+                src="/images/metal-casting.jpg"
                 alt="Investment casting process"
-                className="w-full h-full object-cover rounded"
+                layout="fill"
+                className="object-cover rounded"
               />
             </Card>
-            <Card className="p-4 aspect-square translate-y-8">
-              <img
-                src="https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&q=80"
+            <Card className="p-4 relative aspect-square translate-y-8">
+              <Image
+                src="/images/metal-casting-2.jpg"
                 alt="Sand casting process"
-                className="w-full h-full object-cover rounded"
+                layout="fill"
+                className="object-cover rounded"
               />
             </Card>
           </motion.div>

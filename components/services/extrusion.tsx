@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { Card } from "@/components/ui/card"
 import { Factory, CheckCircle2 } from "lucide-react"
+import Image from "next/image"
 
 const extrusionFeatures = [
   "Aluminum profile extrusion",
@@ -24,18 +25,20 @@ export function ExtrusionService() {
             transition={{ duration: 0.6 }}
             className="order-2 lg:order-none grid grid-cols-2 gap-4"
           >
-            <Card className="p-4 aspect-square">
-              <img
-                src="https://images.unsplash.com/photo-1587289792131-b78915e8e8c5?auto=format&fit=crop&q=80"
+            <Card className="p-4 relative aspect-square">
+              <Image
+                src="/images/Metal-extrusion.jpg"
                 alt="Metal extrusion equipment"
-                className="w-full h-full object-cover rounded"
+                layout="fill"
+                className="object-cover rounded"
               />
             </Card>
-            <Card className="p-4 aspect-square translate-y-8">
-              <img
-                src="https://images.unsplash.com/photo-1595078475328-1ab05d0a6a0e?auto=format&fit=crop&q=80"
+            <Card className="p-4 relative aspect-square translate-y-8">
+              <Image
+                src="/images/metal-extrusion-2.jpg"
                 alt="Extruded metal profiles"
-                className="w-full h-full object-cover rounded"
+                layout="fill"
+                className="object-cover rounded"
               />
             </Card>
           </motion.div>

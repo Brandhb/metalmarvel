@@ -8,7 +8,7 @@ export function ServicesHero() {
     <section className="relative min-h-[60vh] flex items-center">
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1581091226825-c6a89e7e4801?auto=format&fit=crop&q=80"
+          src="/images/Metal-manufacturing-facility.jpg"
           alt="Metal manufacturing facility"
           fill
           className="object-cover opacity-20"

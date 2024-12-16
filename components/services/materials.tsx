@@ -2,17 +2,18 @@
 
 import { motion } from "framer-motion"
 import { Card } from "@/components/ui/card"
+import Image from "next/image"
 
 const materials = [
   {
     category: "Ferrous",
     items: ["Cast Iron", "Mild Steel", "Stainless Steel", "Duplex Steel"],
-    image: "https://images.unsplash.com/photo-1535813547-99c456a41d4a?auto=format&fit=crop&q=80"
+    image: "/images/ferrous-metals.jpg"
   },
   {
     category: "Non-Ferrous",
     items: ["Aluminum", "Brass", "Bronze", "Copper Alloys"],
-    image: "https://images.unsplash.com/photo-1617953141905-b27fb0fa7f61?auto=format&fit=crop&q=80"
+    image: "/images/non-ferrous-copper-pipe.jpg"
   }
 ]
 
@@ -51,9 +52,10 @@ export function MaterialsGrid() {
             <motion.div key={material.category} variants={item}>
               <Card className="overflow-hidden">
                 <div className="relative h-48">
-                  <img
+                  <Image
                     src={material.image}
                     alt={material.category}
+                    fill
                     className="w-full h-full object-cover"
                   />
                 </div>
