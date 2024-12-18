@@ -13,7 +13,7 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    details: ["+1 (555) 123-4567", "+1 (555) 765-4321"]
+    details: ["+61 (1) 2345-6789"]
   },
   {
     icon: Mail,
