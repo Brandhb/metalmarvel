@@ -8,7 +8,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Address",
-    details: ["123 Metal Street", "Industrial District", "New York, NY 10001"]
+    details: ["Sydney, NSW 2000", "Australia"]
   },
   {
     icon: Phone,
@@ -18,7 +18,7 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    details: ["contact@metalmarvels.com", "support@metalmarvels.com"]
+    details: ["support@metalmarvels.com"]
   },
   {
     icon: Clock,
