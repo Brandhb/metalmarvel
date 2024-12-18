@@ -20,8 +20,6 @@ const nextConfig = {
     unoptimized: true,
   },
   trailingSlash: true,
-  reactServerComponents: {
-    use: ["@react-email/components"]}
 };
 
 export default nextConfig;

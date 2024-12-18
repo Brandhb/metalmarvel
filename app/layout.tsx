@@ -24,6 +24,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Add correct favicon path */}
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+      </head>
       <body className={`${inter.variable} ${rajdhani.variable} font-sans`}>
         <ThemeProvider
           attribute="class"
